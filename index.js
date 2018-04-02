@@ -12,18 +12,19 @@ function nowServing(katzDeliLine){
     return `Currently serving ${katzDeliLine.shift()}.`;
   }
 }
-function currentLine(katzDeliLine){
-  var line = [];
-  if (katzDeliLine.length === 0){
-  return "The line is currently empty.";
-  } else {
-    for(var i = 0; i < katzDeliLine.length; i++){
-      line.push(" " + (i+1) + ". " + katzDeliLine[i]);
+function currentLine(katzDeliLine) {
+  if (!katzDeliLine.length) {
+    return "The line is currently empty."
   }
-  return "The line is currently:" + line ;
-  }
-}
 
+  const numbersAndNames = []
+
+  for (let i = 0, l = katzDeliLine.length; i < l; i++) {
+    numbersAndNames.push(`${i + 1}. ${katzDeliLine[i]}`)
+  }
+
+  return `The line is currently: ${numbersAndNames.join(', ')}`
+};
  
   //returns the current line
   //ex katzDeliLine ["Ada", "Grace"]
