@@ -24,8 +24,7 @@ function currentLine(katzDeliLine) {
   }
 
   return `The line is currently: ${numbersAndNames.join(', ')}`
-};
- 
+}
   //returns the current line
   //ex katzDeliLine ["Ada", "Grace"]
   //would return "The line is currently: 1. Ada, 2. Grace"
