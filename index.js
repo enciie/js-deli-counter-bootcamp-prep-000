@@ -9,7 +9,7 @@ function nowServing(katzDeliLine){
   return "There is nobody waiting to be served!";  
   } else {
     //return first person in line then remove that individual from line
-    return `Currently serving ${line.shift()}.`;
+    return `Currently serving ${katzDeliLine.shift()}.`;
   }
 }
 function currentLine(katzDeliLine){
