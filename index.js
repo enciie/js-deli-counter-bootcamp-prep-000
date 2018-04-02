@@ -15,7 +15,7 @@ function nowServing(katzDeliLine){
 function currentLine(katzDeliLine) {
   if (!katzDeliLine.length) {
     return "The line is currently empty."
-  }
+  } else {
 
   const numbersAndNames = []
 
@@ -24,6 +24,7 @@ function currentLine(katzDeliLine) {
   }
 
   return `The line is currently: ${numbersAndNames.join(', ')}`
+}
 }
   //returns the current line
   //ex katzDeliLine ["Ada", "Grace"]
